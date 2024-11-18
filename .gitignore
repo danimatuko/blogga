@@ -1,48 +1,46 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# Ignore node_modules (if you're using Node.js or front-end tools)
+node_modules/
 
-# Configuration
-wp-config.php
+# Ignore Composer's vendor directory (for Composer-managed PHP dependencies)
+vendor/
 
-# Example themes
-/wp-content/themes/twenty*/
+# Ignore composer.lock (if you don't want to track it)
+composer.lock
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Ignore Composer's executable file (if included in your project)
+composer.phar
 
-# Uploads
-/wp-content/uploads/
+# Ignore environment configuration files
+.env
 
-# Log files
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+
+# Ignore temporary files and backup files from text editors
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore compiled files (like for SASS/LESS or JS source maps)
+*.css.map
+*.js.map
+
+# Ignore WordPress auto-generated files in wp-content
+wp-content/plugins/
+wp-content/themes/
+
+# Ignore all files inside the theme's build or dist folder (if applicable)
+build/
+dist/
+
+# Ignore test or local development files (e.g., browser dev tools)
 *.log
+*.pid
 
-# htaccess
-/.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+.wp-env.json

@@ -1,0 +1,20 @@
+{
+    "name": "blogga",
+    "version": "1.0.0",
+    "description": "WordPress theme for blogging",
+    "main": "index.js",
+    "author": "Dani Matuko",
+    "license": "ISC",
+    "scripts": {
+        "start": "wp-env start",
+        "stop": "wp-env stop",
+        "restart": "wp-env stop && wp-env start",
+        "clean": "wp-env clean all",
+        "update": "wp-env update",
+        "shell": "wp-env run cli",
+        "logs": "wp-env logs"
+    },
+    "devDependencies": {
+        "@wordpress/env": "^10.12.0"
+    }
+}
