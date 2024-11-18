@@ -1,0 +1,11 @@
+{
+    "themes": [
+        "."
+    ],
+    "config": {
+        "WP_DEBUG": true
+    },
+    "plugins": [
+        "../blogga-blocks"
+    ]
+}
