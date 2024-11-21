@@ -1,5 +1,55 @@
-<!-- wp:group {"className":"site-header" } -->
-<header class="site-header">
-  <!-- wp:site-title /-->
-</header>
-<!-- /wp:group -->
+<!-- wp:blogga-blocks/top-bar {"className":"has-bb-black-background-color has-background","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"backgroundColor":"bb-black","layout":{"type":"constrained"}} -->
+<div
+  class="wp-block-blogga-blocks-top-bar has-bb-black-background-color has-background"
+  style="
+    padding-top: var(--wp--preset--spacing--20);
+    padding-bottom: var(--wp--preset--spacing--20);
+  "
+>
+  <!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"margin":{"bottom":"0px"},"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
+  <div
+    class="wp-block-columns are-vertically-aligned-center"
+    style="
+      margin-bottom: 0px;
+      padding-top: var(--wp--preset--spacing--20);
+      padding-bottom: var(--wp--preset--spacing--20);
+    "
+  >
+    <!-- wp:column {"verticalAlignment":"center","layout":{"type":"default"}} -->
+    <div class="wp-block-column is-vertically-aligned-center">
+      <!-- wp:blogga-blocks/social-links -->
+      <div class="wp-block-blogga-blocks-social-links">
+        <!-- wp:social-links {"iconColor":"bb-gray","iconColorValue":"#6c757d","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} -->
+        <ul class="wp-block-social-links has-icon-color is-style-logos-only">
+          <!-- wp:social-link {"url":"#","service":"twitter"} /-->
+
+          <!-- wp:social-link {"url":"#","service":"facebook"} /-->
+
+          <!-- wp:social-link {"url":"#","service":"youtube"} /-->
+
+          <!-- wp:social-link {"url":"#","service":"vimeo"} /-->
+
+          <!-- wp:social-link {"url":"#","service":"snapchat"} /-->
+        </ul>
+        <!-- /wp:social-links -->
+      </div>
+      <!-- /wp:blogga-blocks/social-links -->
+    </div>
+    <!-- /wp:column -->
+
+    <!-- wp:column {"verticalAlignment":"center","width":"25%","lock":{"move":false,"remove":false},"layout":{"type":"constrained"}} -->
+    <div
+      class="wp-block-column is-vertically-aligned-center"
+      style="flex-basis: 25%"
+    >
+      <!-- wp:blogga-blocks/search -->
+      <div class="wp-block-blogga-blocks-search bb-search-wrapper">
+        <!-- wp:search {"showLabel":false,"placeholder":"Type keyword to search...","width":100,"widthUnit":"%","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+      </div>
+      <!-- /wp:blogga-blocks/search -->
+    </div>
+    <!-- /wp:column -->
+  </div>
+  <!-- /wp:columns -->
+</div>
+<!-- /wp:blogga-blocks/top-bar -->

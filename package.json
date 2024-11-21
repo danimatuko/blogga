@@ -12,9 +12,12 @@
         "clean": "wp-env clean all",
         "update": "wp-env update",
         "shell": "wp-env run cli",
-        "logs": "wp-env logs"
+        "logs": "wp-env logs",
+        "build:tailwindcss": "npm run clean && tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+        "watch:tailwindcss": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch"
     },
     "devDependencies": {
-        "@wordpress/env": "^10.12.0"
+        "@wordpress/env": "^10.12.0",
+        "tailwindcss": "^3.4.15"
     }
 }

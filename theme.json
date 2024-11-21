@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "1140px",
+            "wideSize": "1920px"
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "name": "Josefin Sans",
+                    "slug": "josefin-sans",
+                    "fontFamily": "josefin-sans,system-ui, sans-serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Josefin Sans",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "src": "file:./assets/fonts/josefin-sans/JosefinSans-Regular.ttf"
+                        }
+                    ]
+                }
+            ]
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "bb-gray",
+                    "name": "Blogga Gray",
+                    "color": "#6c757d"
+                },
+                {
+                    "slug": "bb-gray-light",
+                    "name": "Blogga Gray Light",
+                    "color": "#b3b3b3"
+                },
+                {
+                    "slug": "bb-black",
+                    "name": "Blogga Black",
+                    "color": "#000"
+                },
+                {
+                    "slug": "bb-white",
+                    "name": "Blogga White",
+                    "color": "#fff"
+                },
+                {
+                    "slug": "bb-blue",
+                    "name": "Blogga Blue",
+                    "color": "#007bff"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--josefin-sans)"
+        }
+    },
+    "customTemplates": [],
+    "templateParts": [],
+    "patterns": []
+}
