@@ -1,20 +1,20 @@
 <?php
 
-function blogga_enqueue_styles() {
-	// Enqueue the main Tailwind CSS file for the frontend
-	wp_enqueue_style(
-		'tailwind-main',
-		get_template_directory_uri() . '/dist/main.css', // Adjust the path if needed
-	);
-}
-add_action( 'wp_enqueue_scripts', 'blogga_enqueue_styles' );
+// Define constants for easier path management
+define( 'THEME_DIR', get_template_directory() );
+define( 'THEME_URI', get_template_directory_uri() );
+define( 'THEME_INC', THEME_DIR . '/inc' );
+define( 'THEME_DIST', THEME_DIR . '/dist' );
 
-// Enqueue Tailwind CSS for the block editor
-function blogga_enqueue_block_editor_styles() {
+/**
+ * Include necessary files for theme functionality
+ *
+ * This section includes all essential files that manage various theme features.
+ * Add future includes here as the theme develops, ensuring that functionality
+ * is separated into distinct modules.
+ */
 
-	wp_enqueue_style(
-		'tailwind-main-editor', // Unique handle for the block editor
-		get_template_directory_uri() . '/dist/main.css', // Adjust the path if needed
-	);
-}
-add_action( 'enqueue_block_editor_assets', 'blogga_enqueue_block_editor_styles' );
+// Include the file responsible for enqueuing styles
+require_once THEME_INC . '/enqueue-styles.php';
+// Include the file responsible for enqueuing scripts
+require_once THEME_INC . '/enqueue-scripts.php'; // Enqueue scripts
