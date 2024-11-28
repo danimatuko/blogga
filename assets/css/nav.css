@@ -1,4 +1,52 @@
-.wp-block-navigation {
-    background: pink;
 
+/* -----------------------------------------------------------
+   Blogga Navigation Block Style
+   ----------------------------------------------------------- */
+
+.wp-block-navigation.is-style-blogga-navigation {
+
+  /* -----------------------------------------------------------
+     Style for First-level Menu Items
+     ----------------------------------------------------------- */
+  & > ul > .wp-block-navigation-item {
+
+    /* Uppercase text transformation for first-level navigation links */
+    & > a.wp-block-navigation-item__content {
+      text-transform: uppercase;
+    }
+
+    /* -----------------------------------------------------------
+       Style for Submenu Items (when 'has-child' class is applied)
+       ----------------------------------------------------------- */
+    &.has-child {
+      /* Style for submenu container and links */
+      > ul.wp-block-navigation__submenu-container {
+        li.wp-block-navigation-item {
+
+          /* Style for submenu links within a parent item with a 'has-child' class */
+          a.wp-block-navigation-item__content {
+            color: var(--wp--preset--color--blogga-black);
+
+            &:hover {
+              color: var(--wp--preset--color--blogga-white); /* Hover color for submenu items */
+            }
+          }
+
+          /* Add blue background on hover for the entire li */
+          &:hover {
+            background-color: var(--wp--preset--color--blogga-blue); /* Use the Blogga Blue preset color */
+          }
+        }
+      }
+    }
+  }
+
+  /* -----------------------------------------------------------
+     Style for All Links in the Navigation (excluding submenus)
+     ----------------------------------------------------------- */
+  & > ul .wp-block-navigation-item a.wp-block-navigation-item__content {
+    /* Default link color and font size for all navigation items */
+    color: var(--wp--preset--color--blogga-gray); /* Use the Blogga Gray preset color */
+    font-size: var(--wp--preset--font-size--small);
+  }
 }

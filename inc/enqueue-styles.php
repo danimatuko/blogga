@@ -1,6 +1,15 @@
 <?php
 /**
- * Enqueue styles for the frontend
+ * Blogga Styles Enqueue
+ *
+ * This file handles the enqueueing of styles for both the frontend and block editor.
+ * It includes Tailwind CSS and custom styles for the navigation block.
+ *
+ * @package Blogga
+ */
+
+/**
+ * Enqueue styles for the frontend.
  */
 function blogga_enqueue_styles() {
 	wp_enqueue_style(
@@ -16,7 +25,7 @@ function blogga_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'blogga_enqueue_styles' );
 
 /**
- * Enqueue styles for the block editor
+ * Enqueue styles for the block editor.
  */
 function blogga_enqueue_block_editor_styles() {
 	wp_enqueue_style(

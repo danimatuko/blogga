@@ -18,3 +18,5 @@ define( 'THEME_DIST', THEME_DIR . '/dist' );
 require_once THEME_INC . '/enqueue-styles.php';
 // Include the file responsible for enqueuing scripts
 require_once THEME_INC . '/enqueue-scripts.php'; // Enqueue scripts
+
+require_once THEME_INC . '/block-styles.php';

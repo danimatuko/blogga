@@ -27,27 +27,27 @@
         "color": {
             "palette": [
                 {
-                    "slug": "bb-gray",
+                    "slug": "blogga-gray",
                     "name": "Blogga Gray",
                     "color": "#6c757d"
                 },
                 {
-                    "slug": "bb-gray-light",
+                    "slug": "blogga-gray-light",
                     "name": "Blogga Gray Light",
                     "color": "#b3b3b3"
                 },
                 {
-                    "slug": "bb-black",
+                    "slug": "blogga-black",
                     "name": "Blogga Black",
                     "color": "#000"
                 },
                 {
-                    "slug": "bb-white",
+                    "slug": "blogga-white",
                     "name": "Blogga White",
                     "color": "#fff"
                 },
                 {
-                    "slug": "bb-blue",
+                    "slug": "blogga-blue",
                     "name": "Blogga Blue",
                     "color": "#007bff"
                 }
