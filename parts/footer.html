@@ -1,7 +1,15 @@
 <!-- wp:group {"className":"site-footer"} -->
 <footer class="site-footer">
-  <!-- wp:paragraph -->
-  <p>&copy; 2024 My WordPress Site. Powered by WordPress.</p>
-  <!-- /wp:paragraph -->
+  <!-- wp:group {"className":"site-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+  <div class="wp-block-group site-footer"
+    style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+    <!-- wp:group {"className":"site-footer"} -->
+    <div class="wp-block-group site-footer"><!-- wp:paragraph {"align":"center"} -->
+      <p class="has-text-align-center">© 2024 My WordPress Site. Powered by WordPress.</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 </footer>
 <!-- /wp:group -->
